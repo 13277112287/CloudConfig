@@ -2,8 +2,8 @@ server:
   port: 8641
 # 自身服务的名称 注册中心的配置
 spring:
-  application:
-    name: configClient8641
+  #application:          在bootstrap.yml中已经配置，config是根据bootstrap的name和profile来查找配置
+   #name: configClient8641
 
   cloud:
     consul:
