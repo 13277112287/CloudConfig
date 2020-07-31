@@ -1,0 +1,13 @@
+server:
+  port: 8641
+# 自身服务的名称 注册中心的配置
+spring:
+  application:
+    name: configClient8641
+
+  cloud:
+    consul:
+      discovery:
+        service-name: configClient8641  # 服务提供者名称
+      host: localhost                  # consul 所在服务地址
+      port: 8500
